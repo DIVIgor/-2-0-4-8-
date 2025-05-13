@@ -57,8 +57,8 @@ class Slot:
             if self.value == el.value:
                 el.value *= 2
                 self.clean()
-            else:
-                self.move(el)
+
+            self.move(el)
 
 
 class Grid:
@@ -88,7 +88,7 @@ class Grid:
     def __str__(self) -> str:
         """A string representation of the grid that is useful for CLI mode.
         """
-        return f"\n{"-" * (self.size*2)}\n".join(
+        return f"\n{'-' * (self.size*2)}\n".join(
             "|".join(str(row).strip("[]").replace("None", ' ').split(", "))
             for row in self.current
     )
