@@ -3,6 +3,18 @@
 This is a Python with PyGameCE based implementation of the 2048 game. I made it just for fun.
 *For now works in CLI only.*
 
+**CLI output example**
+
+```
+ | | |
+--------
+8|4| |
+--------
+8|4|2|2
+--------
+4|32|64|
+```
+
 ## To do list
 
 ### Logic
